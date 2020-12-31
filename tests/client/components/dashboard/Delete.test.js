@@ -14,7 +14,7 @@ describe('<Delete />', ()=>{
     it('renders delete button successfully', () => {
         expect(component.exists()).toEqual(true);
     })
-    // check for 
+    
     // const nodeWrapper = wrapper.find('input[type="submit"]');
     // expect(nodeWrapper).toHaveLength(1);
 });
@@ -22,7 +22,7 @@ describe('<Delete />', ()=>{
 // test for click simulation of delete
     it('it deletes result when delete btn is clicked', () => {
         // shallow render stored in wrapper to simulate 
-        const wrapper = shallow(<DeleteBtn />);
+        const wrapper = shallow(<Delete />);
         const deleteBtn = wrapper.find('button.delete');
         // simulate click event on deleteBtn
         deleteBtn.simulate('click');

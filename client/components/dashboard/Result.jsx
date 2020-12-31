@@ -1,4 +1,5 @@
 import React from 'react';
+import DeleteBtn from './DeleteBtn.jsx';
 
 const Result = (props) => (
   <div>
@@ -12,6 +13,7 @@ const Result = (props) => (
     <i><p>Review</p></i>
     <p>{props.review}</p>
     <input type="submit" value="Update"></input>
+    <DeleteBtn />
   </div>
 );
 
